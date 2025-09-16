@@ -1,0 +1,14 @@
+.env
+.env*
+!.env.example
+
+build
+
+log
+!air.log
+
+.DS_Store
+
+.vscode
+.idea
+postgres

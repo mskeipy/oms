@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Reset Your Password | DropX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px 0;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 32px;
+        }
+        h1 {
+            color: #333333;
+        }
+        p {
+            color: #555555;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0066ff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .footer {
+            font-size: 12px;
+            color: #888888;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔐 Reset Your Password</h1>
+    <p>Hello {{.Email}},</p>
+    <p>We received a request to reset the password for your DropX account.</p>
+    <p>Click the button below to proceed. This link will expire in 30 minutes for security reasons.</p>
+    <a href="{{.ResetLink}}">Reset Password</a>
+    <p>If you didn’t request a password reset, you can safely ignore this email.</p>
+    <p class="footer">© 2025 DropX. All rights reserved.</p>
+</div>
+</body>
+</html>
